@@ -6,7 +6,7 @@
  */
 
 import { el, resolve, isNode } from '@elemaudio/core';
-import type { Signal, StereoSignal } from '../../typeDeclarations';
+import type { Signal, StereoSignal } from './typeDeclarations';
 
 /**
  * @name constants
@@ -136,7 +136,7 @@ export function progress(props: {
 	return (
 		el.snapshot({ key, name: 'progress' }, el.train(rate ? el.mul(rate, run) : run), normProgress)
 	);
-}	
+}
 
 
 /**
